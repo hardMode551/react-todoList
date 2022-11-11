@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Rubik+Bubbles&display=swap');
+
+*{
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  
+  height: 100vh;
+
+  background: -webkit-linear-gradient(180deg, rgb(111, 52, 214), rgb(172, 56, 186), rgb(77, 171, 150));
+background: -moz-linear-gradient(180deg, rgb(111, 52, 214), rgb(172, 56, 186), rgb(77, 171, 150));
+background: linear-gradient(180deg, rgb(111, 52, 214), rgb(172, 56, 186), rgb(77, 171, 150));
+}
+
+.App{
+
+  
+  text-align: center;
+  margin: 20px auto;
+
+  max-width: 500px;
+
+  background-color: #881e9b;
+  border-radius: 12px;
+
+  padding: 10px;
+
+  .tasks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px auto;
+
+    padding: 10px;
+
+    width: 330px;
+
+    overflow: auto;
+
+    background-color: #CC44E4;
+
+    .item-text{
+      font-size: 18px;
+    }
+
+    .strike{
+      text-decoration: line-through;
+    }
+
+    .item-delete{
+      margin-left: 5px;
+      cursor: pointer;
+      
+      width: 20px;
+      padding: 5px;
+
+      background-color: rgb(77, 74, 74);
+      border-radius: 40px;
+      &:hover{
+        opacity: 0.7;
+      }
+    }    
+  }
+
+  input{
+    width: 210px;
+
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  button{
+    color: white;
+
+    cursor: pointer;
+    padding: 11px;
+
+    font-size: 16px;
+
+    background-color: #CC44E4;
+    border: none;
+  }
+
+}
+
+
+
